@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#9ac870		">
+
+    <Button
+        android:id="@+id/buttonRegistration"
+        android:layout_width="251dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="94dp"
+        android:backgroundTint="#269750"
+        android:onClick="registr"
+        android:text="@string/registration"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAuthorization"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonAuthorization"
+        android:layout_width="252dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#269750"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rabbitHello"
+        tools:ignore="MissingConstraints,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textHello"
+        android:layout_width="326dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="-50dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/hello_my_friend"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#126f35"
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/rabbitHello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/rabbitHello"
+        android:layout_width="246dp"
+        android:layout_height="447dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="-70dp"
+        android:contentDescription="@string/iconfirst"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAuthorization"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHello"
+        app:srcCompat="@drawable/animalhello"
+        tools:ignore="ImageContrastCheck,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
